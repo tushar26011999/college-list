@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Star, Users, TrendingUp, Award, DollarSign, Clock, Monitor, Trophy, CheckCircle, Plus } from "lucide-react";
+import { Star, Users, Trophy, CheckCircle, Plus } from "lucide-react";
 import { CollegeData } from '@/lib/types';
 
 export function CollegeCard({ college }: { college: CollegeData }) {

@@ -262,7 +262,7 @@ export default function CollegeList({ filters }: CollegeListProps) {
         <div className="text-center py-6">
           <div className="text-gray-400 dark:text-gray-500 text-2xl mb-2">🎓</div>
           <p className="text-gray-600 dark:text-gray-400 text-sm">
-            You've reached the end! All {filteredColleges.length} universities are displayed.
+            You&apos;ve reached the end! All {filteredColleges.length} universities are displayed.
           </p>
         </div>
       )}

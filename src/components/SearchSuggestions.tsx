@@ -1,5 +1,4 @@
 'use client';
-import { useState } from 'react';
 import { Search, TrendingUp, Star, DollarSign } from 'lucide-react';
 
 interface SearchSuggestionsProps {
