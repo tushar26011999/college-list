@@ -1,6 +1,6 @@
 # College Vidya - University Listing Platform
 
-A modern, responsive web application for discovering and comparing online universities. Built with Next.js 15, TypeScript, and ShadCN/UI.
+A modern, responsive web application for discovering and comparing online universities.
 
 Live Link: https://college-list-a3we602hd-tushar-parashars-projects.vercel.app/
 
@@ -146,5 +146,4 @@ college-list/
 ## 🐛 Known Issues
 
 - **Image Optimization**: Currently using `<img>` tags instead of Next.js `<Image>` component for external URLs
-- **Minor Warnings**: ESLint warnings about image optimization (non-blocking)
 
