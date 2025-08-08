@@ -2,7 +2,7 @@
 
 A modern, responsive web application for discovering and comparing online universities.
 
-Live Link: https://college-list-a3we602hd-tushar-parashars-projects.vercel.app/
+Live Link: https://college-list-eta.vercel.app/
 
 ## 🚀 Features
 
