@@ -40,16 +40,6 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <div className="hidden md:flex items-center gap-6 text-sm text-gray-600 dark:text-gray-400">
-                <div className="flex items-center gap-1">
-                  <Search className="h-4 w-4" />
-                  <span>500+ Universities</span>
-                </div>
-                <div className="flex items-center gap-1">
-                  <Users className="h-4 w-4" />
-                  <span>50K+ Students</span>
-                </div>
-              </div>
               <ModeToggle />
             </div>
           </div>
@@ -63,7 +53,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Discover Top Online Universities
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Compare fees, accreditations, and find the perfect online degree program for your career goals
             </p>
           </div>

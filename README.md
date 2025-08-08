@@ -2,6 +2,8 @@
 
 A modern, responsive web application for discovering and comparing online universities. Built with Next.js 15, TypeScript, and ShadCN/UI.
 
+Live Link: https://college-list-a3we602hd-tushar-parashars-projects.vercel.app/
+
 ## 🚀 Features
 
 ### Core Functionality
@@ -39,7 +41,7 @@ A modern, responsive web application for discovering and comparing online univer
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/tushar26011999/college-list.git
    cd college-list
    ```
 
@@ -58,7 +60,7 @@ A modern, responsive web application for discovering and comparing online univer
 
 ## 🚀 Deployment
 
-### Vercel Deployment (Recommended)
+### Vercel Deployment
 
 1. **Push to GitHub**
    ```bash

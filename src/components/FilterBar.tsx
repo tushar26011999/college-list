@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
-import { Search, Filter, Star, DollarSign, X, TrendingUp } from "lucide-react";
+import { Search, Filter, Star, X } from "lucide-react";
 import { SearchSuggestions } from "./SearchSuggestions";
 
 type Props = {
@@ -80,7 +80,6 @@ export default function FilterBar({ onFilterChange }: Props) {
         {/* Search Bar */}
         <div className="space-y-2">
           <label className="text-sm font-medium text-gray-700 dark:text-gray-300 flex items-center gap-1">
-            <Search className="h-4 w-4" />
             Search Universities
           </label>
           <div className="relative">
@@ -112,7 +111,6 @@ export default function FilterBar({ onFilterChange }: Props) {
         <div className="space-y-2">
           <div className="flex items-center justify-between">
             <label className="text-sm font-medium text-gray-700 dark:text-gray-300 flex items-center gap-1">
-              <DollarSign className="h-4 w-4" />
               Maximum Fee
             </label>
             <span className="text-sm text-gray-600 dark:text-gray-400">
@@ -162,24 +160,6 @@ export default function FilterBar({ onFilterChange }: Props) {
                 )}
               </Button>
             ))}
-          </div>
-        </div>
-
-        {/* Quick Stats */}
-        <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-3">
-          <div className="flex items-center gap-2 mb-2">
-            <TrendingUp className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Quick Stats</span>
-          </div>
-          <div className="grid grid-cols-2 gap-2 text-xs">
-            <div className="text-center p-2 bg-white dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-600">
-              <div className="font-semibold text-green-600 dark:text-green-400">₹2L</div>
-              <div className="text-gray-600 dark:text-gray-400">Avg Fee</div>
-            </div>
-            <div className="text-center p-2 bg-white dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-600">
-              <div className="font-semibold text-blue-600 dark:text-blue-400">4.2</div>
-              <div className="text-gray-600 dark:text-gray-400">Avg Rating</div>
-            </div>
           </div>
         </div>
 

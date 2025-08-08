@@ -61,7 +61,20 @@ export function CollegeCard({ college }: { college: CollegeData }) {
 
   return (
     <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 border-0 bg-white dark:bg-gray-800 shadow-sm hover:-translate-y-1 rounded-xl">
-      {/* University Header with Logo and Name */}
+      {/* University Banner Image - Fixed at Top */}
+      <div className="relative h-40 overflow-hidden">
+        <img 
+          src={getMainBanner()} 
+          alt={college.university.name}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          onError={(e) => {
+            e.currentTarget.src = college.university.logo;
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+      </div>
+
+      {/* University Header with Logo and Name - Fixed Height */}
       <div className="p-4 border-b border-gray-100 dark:border-gray-700">
         <div className="flex items-start gap-3">
           <img 
@@ -73,27 +86,14 @@ export function CollegeCard({ college }: { college: CollegeData }) {
             }}
           />
           <div className="flex-1 min-w-0">
-            <h2 className="text-lg font-bold text-gray-900 dark:text-white line-clamp-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+            <h2 className="text-lg font-bold text-gray-900 dark:text-white line-clamp-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors leading-tight">
               {college.university.name}
             </h2>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+            <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 line-clamp-1">
               {college.university.name.toUpperCase()}
             </p>
           </div>
         </div>
-      </div>
-
-      {/* University Banner Image */}
-      <div className="relative h-40 overflow-hidden">
-        <img 
-          src={getMainBanner()} 
-          alt={college.university.name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-          onError={(e) => {
-            e.currentTarget.src = college.university.logo;
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
       </div>
 
       <CardContent className="p-4 space-y-4">
